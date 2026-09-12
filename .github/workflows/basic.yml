@@ -75,7 +75,7 @@ jobs:
 
   check:
     needs: [changes]
-    if: needs.changes.outputs.any_modified == 'true'
+    #if: needs.changes.outputs.any_modified == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     strategy:
